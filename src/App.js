@@ -11,10 +11,10 @@ function App() {
     <>
       <NavbarTop />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/login" component={Login} />
-        <Route path="/certificate_details" component={CertificateDetails} />
-        <Route path="/web_messages" component={WebMessages} />
+        <Route exact path="/admin" component={Home} />
+        <Route exact path="/admin/login" component={Login} />
+        <Route exact path="/admin/certificate_details" component={CertificateDetails} />
+        <Route exact path="/admin/web_messages" component={WebMessages} />
       </Switch>
     </>
   );

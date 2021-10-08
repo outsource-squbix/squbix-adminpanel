@@ -11,19 +11,19 @@ const Home = () => {
       </HeaderBar>
       <Container style={containerWrap}>
         <Wrapper>
-          <NavLink style={{ textDecoration: "none" }} to="/web_messages">
+          <NavLink style={{ textDecoration: "none" }} to="/admin/web_messages">
             <Button>Website Messages</Button>
           </NavLink>
 
           <br />
           <br />
-          <NavLink style={{ textDecoration: "none" }} to="/certificate_details">
+          <NavLink style={{ textDecoration: "none" }} to="/admin/certificate_details">
             <Button>Add Certificate Details</Button>
           </NavLink>
           <br />
           <br />
 
-          <NavLink style={{ textDecoration: "none" }} to="/newsletter">
+          <NavLink style={{ textDecoration: "none" }} to="/admin/newsletter">
             <Button>Newsletter Subscriptions</Button>
           </NavLink>
         </Wrapper>
