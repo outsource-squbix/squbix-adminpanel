@@ -2,8 +2,10 @@ import React from "react";
 import { Container, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import CertificateDetails from "../Components/CertificateDetails";
 
 const Home = () => {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
       <HeaderBar>
@@ -17,9 +19,14 @@ const Home = () => {
 
           <br />
           <br />
-          <NavLink style={{ textDecoration: "none" }} to="/admin/certificate_details">
-            <Button>Add Certificate Details</Button>
-          </NavLink>
+          <Button variant="primary" onClick={() => setModalShow(true)}>
+            Add Certificate Details
+          </Button>
+
+          <CertificateDetails
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          />
           <br />
           <br />
 
